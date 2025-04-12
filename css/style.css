@@ -1,0 +1,141 @@
+:root{
+    --White: #fff;
+    --Black: #000;
+    --Gris-claro: #D2D3CF;
+    --Gris-claroXl: #e7e7e6;
+    --Negro-Olive: #363F3B;
+    --Verde: #359350;
+    --Verde-oscuro: #075f20;
+    --Gris-Oscuro: #25362D;
+    --fuente: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--Gris-claroXl);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.contenedor { 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Estilos Header */
+.header{ 
+    background-color: var(--Gris-claro);
+}
+
+.header-logo a img{
+    width: 15%;
+}
+
+/* Estilos navegaciones de Header y Footer */
+nav ul { 
+    list-style: none;
+}
+
+nav ul a { 
+    text-decoration: none;
+    color: var(--Verde);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Reset de estilos a los enlaces de Redes en todas las paginas */
+.redes a{
+    text-decoration: none;
+    color: var(--Black);
+}
+
+/* Pagina Index - Main */
+
+.productos {
+    padding: 20px 0;
+}
+
+.producto{
+    .precio{
+        color: var(--Verde);
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .producto-titulo{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .producto-img { 
+        width: 20%;
+    }
+}
+
+.categorias-section{
+    background-color: var(--White);
+    padding: 20px 0;
+}
+
+.categoria{
+    .categoria-img{
+        width: 10%;
+    }
+}
+
+/* Color Iconos Redes */
+.linkedin, .facebook{
+    color: blue;
+}
+.instagram{
+    color: rgb(236, 49, 49);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--Gris-claro);
+}
+
+
+/*Pagina Nosotros*/
+.section-nosotros{
+    margin: 2.5rem 25rem;
+    border: .2px solid var(--Gris-claro);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+.section-nosotros img{
+    width: 550px;
+    border-radius: 10px;
+}
+
+/*Pagina Servicios*/
+.main-servicios{
+    background-color: var(--White);
+}
+
+/*Pagina producto especifico*/
+.producto-especifico{
+    width: 50%;
+
+    .flechas{
+        width: 8%;
+    }
+}
+.producto-especifico .imagen {
+    width: 100%;
+}
+
+/*Pagina Contacto*/
+.section-contacto {
+    background-color: var(--White);
+}

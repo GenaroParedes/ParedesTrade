@@ -1,0 +1,4 @@
+Gris claro: #D2D3CF
+Negro Olive: #363F3B
+Verde: #359350
+Gris Oscuro: #25362D
