@@ -35,8 +35,13 @@ h1, h2 {
     background-color: var(--Gris-claro);
 }
 
+.header-logo {
+    width: 163px;
+    height: 87px;
+}
+
 .header-logo a img{
-    width: 15%;
+    width: 100%;
 }
 
 /* Estilos navegaciones de Header y Footer */
