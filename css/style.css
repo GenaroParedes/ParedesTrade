@@ -51,6 +51,11 @@ nav ul a {
     text-transform: uppercase;
 }
 
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
 /* Reset de estilos a los enlaces de Redes en todas las paginas */
 .redes a{
     text-decoration: none;
