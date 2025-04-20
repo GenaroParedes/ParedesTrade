@@ -8,6 +8,8 @@
     --Verde-oscuro: #075f20;
     --Gris-Oscuro: #25362D;
     --fuente: "Roboto", sans-serif;
+
+    --transition: all .3s ease
 }
 
 * {
@@ -28,6 +30,22 @@ h1, h2 {
 .contenedor { 
     max-width: 1400px;
     margin: 0 auto;
+}
+
+/*Botones*/
+.button {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 9px 14px;
+    color: var(--White);
+    background-color: var(--Gris-Oscuro);
+    font-weight: 700;
+    margin:  0 auto;
+}
+
+.button:hover{
+    background-color: var(--Verde-oscuro);
 }
 
 /* Estilos Header */
@@ -63,6 +81,7 @@ nav ul a {
 
 nav ul a:hover{
     transform: translateY(-4px);
+    color: var(--Verde-oscuro);
 }
 
 nav ul a:active{
@@ -86,18 +105,12 @@ nav ul a:active{
 }
 
 .nav-link:hover{
-    transform: translateX(5px);
     font-weight: 700;
 }
 
 .nav-link:active{
     background-color: var(--Verde);
     color: var(--White);
-}
-
-.menu-icon {
-    font-size: 28px;
-    cursor: pointer;
 }
 
 /* Reset de estilos a los enlaces de Redes en todas las paginas */
@@ -107,12 +120,31 @@ nav ul a:active{
 }
 
 /* Pagina Index - Main */
+.imagen-fondo {
+    background-image: url('../assets/images/fondo-ia.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */
+    height: 80vh; /* Ocupa toda la altura de la pantalla */
+    width: 100%;
+    position: relative; /* Para posicionar el contenido encima */
+    color: var(--Black);
+    font-weight: 700;
+}
 
+.titulo-main {
+    margin: 0 2rem;
+}
 .productos {
     padding: 20px 0;
+    margin: 0 auto;
 }
 
 .producto{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .precio{
         color: var(--Verde);
         font-weight: bold;
@@ -125,22 +157,65 @@ nav ul a:active{
     }
 
     .producto-img { 
-        width: 20%;
+        width: 50%;
     }
+}
+
+/*Estilos a los titulos h2 de productos y categorias*/
+.section__titulo{
+    font-weight: 700;
 }
 
 .categorias-section{
+    margin-top: 3rem;
     background-color: var(--White);
-    padding: 20px 0;
+    padding: 20px 20px;
+}
+
+.categorias {
+    margin: 5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 .categoria{
+    text-align: center;
+    background-color: var(--Gris-Oscuro);
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: var(--transition);
     .categoria-img{
-        width: 10%;
+        width: 50%;
+        padding-bottom: 1rem;
+        color: white;
+    }
+    .categoria__titulo{
+        padding-top: 1rem;
+        color: var(--White);
+        font-weight: 700;
     }
 }
 
+.categoria:hover {
+    transform: translateY(-10px);
+    background-color: var(--Verde-oscuro);
+}
+
 /* Color Iconos Redes */
+.redes a {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.redes a:hover {
+    color: blue;
+}
+
+.redes a:hover:nth-child(2) {
+    color: rgb(236, 49, 49);
+}
+
 .linkedin, .facebook{
     color: blue;
 }
@@ -151,6 +226,31 @@ nav ul a:active{
 /* Footer */
 .footer {
     background-color: var(--Gris-claro);
+    margin-top: 2rem;
+
+    .footer__titulo{
+        color: var(--Black);
+        font-weight: 600;
+        margin: 2rem 0;
+        position: relative;
+    }
+
+    .footer__titulo::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 100px; /* o 100% si querés que ocupe todo el ancho */
+        height: 1px;
+        background-color: var(--Black);
+    }
+}
+
+
+.contenido-footer{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
@@ -187,4 +287,49 @@ nav ul a:active{
 /*Pagina Contacto*/
 .section-contacto {
     background-color: var(--White);
+}
+
+.footer .redes div a, .footer .informacion div p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .redes div,  .footer .informacion div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+
+/*Media Queries*/
+@media (min-width: 768px){
+    .categorias {
+        grid-template-columns: 1fr 1fr;
+    }    
+    .contenido-footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    .principal-info{
+        margin: 0 5rem;
+    }
+    .categorias {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contenido-footer{
+        grid-template-columns: repeat(4, 1fr);
+    }   
+}
+
+@media (min-width: 1200px){
+    .principal-info{
+        margin: 0 25rem;
+    }
+    .categorias {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }   
 }
