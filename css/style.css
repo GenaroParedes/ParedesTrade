@@ -32,6 +32,11 @@ h1, h2 {
     margin: 0 auto;
 }
 
+.contenedor-lg{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /*Botones*/
 .button {
     text-decoration: none;
@@ -45,6 +50,27 @@ h1, h2 {
 }
 
 .button:hover{
+    background-color: var(--Verde-oscuro);
+}
+
+.productos-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.filtro-btn{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    color: var(--White);
+    font-weight: 600;
+    background-color: var(--Verde);
+}
+
+.filtro-btn:hover{
     background-color: var(--Verde-oscuro);
 }
 
@@ -138,13 +164,28 @@ nav ul a:active{
 .productos {
     padding: 20px 0;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .producto{
-    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+
+    .producto__info{
+        margin-top: 2rem;
+
+        h2{
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
     .precio{
         color: var(--Verde);
         font-weight: bold;
@@ -170,6 +211,7 @@ nav ul a:active{
     margin-top: 3rem;
     background-color: var(--White);
     padding: 20px 20px;
+
 }
 
 .categorias {
@@ -183,13 +225,9 @@ nav ul a:active{
     text-align: center;
     background-color: var(--Gris-Oscuro);
     border-radius: 10px;
-    padding: 10px 25px;
+    padding: 25px;
     transition: var(--transition);
-    .categoria-img{
-        width: 50%;
-        padding-bottom: 1rem;
-        color: white;
-    }
+    
     .categoria__titulo{
         padding-top: 1rem;
         color: var(--White);
@@ -255,21 +293,50 @@ nav ul a:active{
 
 
 /*Pagina Nosotros*/
+.main-nosotros{
+    min-height: 90vh;
+}
+
 .section-nosotros{
-    margin: 2.5rem 25rem;
-    border: .2px solid var(--Gris-claro);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    padding: 10px;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .section-nosotros__img {
+        flex: 1;
+        width: 100%;
+        border: .5px solid var(--Gris-claro);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+            width: 100%;
+        } 
+    }
+    .section-nosotros__parrafo {
+        flex: 1;
+        p{
+            padding: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
 }
-.section-nosotros img{
-    width: 550px;
-    border-radius: 10px;
-}
+
 
 /*Pagina Servicios*/
 .main-servicios{
     background-color: var(--White);
+}
+
+/*background image*/
+.servicios-principal{
+    background-color: var(--Verde);
+    padding: 2rem 3rem;
+    text-align: center;
+    color: var(--White);
 }
 
 /*Pagina producto especifico*/
@@ -282,11 +349,6 @@ nav ul a:active{
 }
 .producto-especifico .imagen {
     width: 100%;
-}
-
-/*Pagina Contacto*/
-.section-contacto {
-    background-color: var(--White);
 }
 
 .footer .redes div a, .footer .informacion div p {
@@ -303,6 +365,67 @@ nav ul a:active{
 }
 
 
+/*Pagina Contacto*/
+.section-contacto{
+    padding: 25px;
+    background-color: var(--Verde);
+    border-radius: 10px;
+
+    .section-contacto__info{
+        display: none;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        color: var(--White);
+        gap: 2rem;
+
+        input, textarea{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            border: 1px solid var(--Verde-oscuro);
+            color: var(--White);
+        }
+
+        textarea{
+            min-height: 120px;
+        }
+
+        
+
+        input:hover, textarea:hover{
+            background-color: var(--Verde-oscuro);
+            border: 1px solid var(--Black);
+        }
+
+        input:focus, textarea:focus {
+            background-color: var(--Verde-oscuro);
+            outline: none;
+        }
+
+        .formulario__button{
+            background-color: transparent;
+            border: 1px solid var(--Verde-oscuro);
+            color: var(--White);
+            font-weight: 700;
+        }
+
+        .formulario__button:hover{
+            background-color: var(--Verde-oscuro);
+            border: 1px solid var(--Black);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+          color: var(--White); /* o cualquier color que estés usando */
+          opacity: 1; /* importante para que se vea bien en algunos navegadores */
+        }
+    }
+}
+
+
 /*Media Queries*/
 @media (min-width: 768px){
     .categorias {
@@ -311,7 +434,54 @@ nav ul a:active{
     .contenido-footer{
         grid-template-columns: repeat(2, 1fr);
     }
+    /*Pagina nosotros*/
+    .section-nosotros{
+        flex-direction: row;
+        border: 0.2px solid var(--Gris-claro);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+
+        .section-nosotros__parrafo {
+            p {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+    /*Pagina Servicios*/
+    .servicios-principal{
+        background-image: url('../assets/images/fondo-servicios1.png');
+        background-position: bottom;
+        background-size: cover;
+        min-height: 90vh;
+        color: var(--Black);
+    }
+
+    /*Pagina Producto especifico*/
+    .producto{
+        flex-direction: row;
+        gap: 2rem;
+        .carousel{
+            flex: 1;
+        }
+        .carousel-inner{
+            height: 100%;
+            .carousel-item{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        
+        .producto__info{
+            margin: 0;
+            flex: 1;
+        }
+        
+    }
 }
+
 
 @media (min-width: 992px){
     .principal-info{
@@ -322,7 +492,7 @@ nav ul a:active{
     }
     .contenido-footer{
         grid-template-columns: repeat(4, 1fr);
-    }   
+    }  
 }
 
 @media (min-width: 1200px){
@@ -332,4 +502,89 @@ nav ul a:active{
     .categorias {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }   
+
+    .section-nosotros{
+        margin: 0 auto;
+        .section-nosotros__parrafo {
+            p {
+                padding: 30px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .servicios-principal{
+        padding: 0 200px;
+    }
+
+    .producto{
+        .producto__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .section-contacto{
+        display: flex;
+        flex-direction: row;
+        color: var(--White);
+        padding: 20px;
+
+        .section-contacto__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            text-align: center;
+            margin-right: 4rem;
+
+            .redes{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+                a{
+                    color: var(--white);
+                }
+                a:hover{
+                    color: blue;
+                }
+                a:hover:nth-child(2){
+                    color: rgb(236, 49, 49);
+                }
+            }
+        }
+        .formulario{
+            flex: 1;
+        }
+
+        .section-contacto__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 300px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

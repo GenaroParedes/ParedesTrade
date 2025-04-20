@@ -67,21 +67,33 @@
 
     <!--Inicio main-->
     <main class="producto-main">
-        <article class="producto contenedor">
-            <div class="producto-especifico">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path d="M12 2a10 10 0 0 1 .324 19.995l-.324 .005l-.324 -.005a10 10 0 0 1 .324 -19.995zm.707 5.293a1 1 0 0 0 -1.414 0l-4 4a1.048 1.048 0 0 0 -.083 .094l-.064 .092l-.052 .098l-.044 .11l-.03 .112l-.017 .126l-.003 .075l.004 .09l.007 .058l.025 .118l.035 .105l.054 .113l.043 .07l.071 .095l.054 .058l4 4l.094 .083a1 1 0 0 0 1.32 -1.497l-2.292 -2.293h5.585l.117 -.007a1 1 0 0 0 -.117 -1.993h-5.586l2.293 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path>
-                </svg>
-                <img class="imagen" src="../assets/images/1200-8.jpg" alt="Imagen Moto">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path d="M12 2l.324 .005a10 10 0 1 1 -.648 0l.324 -.005zm.613 5.21a1 1 0 0 0 -1.32 1.497l2.291 2.293h-5.584l-.117 .007a1 1 0 0 0 .117 1.993h5.584l-2.291 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.064 -.089l.062 -.113l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z"></path>
-                </svg>
+        <article class="producto contenedor p-5">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/1200-8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/1200-8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/1200-8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div>
-                <h1>BMW 1200 Rally</h1>
+            <div class="producto__info">
+                <h2>BMW 1200 Rally</h2>
                 <p class="precio">$37.500,00</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae asperiores repellendus architecto, quisquam saepe odio quae veniam eum. Cumque dolorem dolores voluptatem odio magnam!</p>
-                <a href="./contacto.html">Contáctanos</a>
+                <p class="px-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae asperiores repellendus architecto, quisquam saepe odio quae veniam eum. Cumque dolorem dolores voluptatem odio magnam!</p>
+                <a class="button" href="./contacto.html">Contáctanos</a>
             </div>
         </article>
     </main>
@@ -97,9 +109,9 @@
             <div class="redes w-100 text-center my-3">
                 <h3 class="footer__titulo">Redes</h3>
                 <div>
-                    <a href="https://www.facebook.com/"><i class="facebook fa-brands fa-facebook"></i>Facebook</a>
-                    <a href="https://www.instagram.com/"><i class="instagram fa-brands fa-square-instagram"></i>Instagram</a>
-                    <a href="https://www.linkedin.com/home"><i class="linkedin fa-brands fa-linkedin"></i>Linkedln</a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="facebook fa-brands fa-facebook"></i>Facebook</a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="instagram fa-brands fa-square-instagram"></i>Instagram</a>
+                    <a href="https://www.linkedin.com/home" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i>Linkedln</a>
                 </div>
             </div>
             <div class="informacion w-100 text-center my-3">

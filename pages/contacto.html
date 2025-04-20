@@ -67,43 +67,57 @@
 
     <!-- Formulario de contacto - Main -->
     <main class="main-contacto">
-        <h1 class="contenedor">Contáctanos</h1>
-        <section class="contenedor section-contacto">
-            <div class="main-info">
-                <h3>Nuestros datos</h3>
-                <div class="informacion">
-                    <p><i class="fa-solid fa-envelope"></i>Correo@Correo.com</p>
-                    <p><i class="fa-solid fa-mobile-retro"></i>3534244272</p>
+        <h1 class="my-4">Contáctanos</h1>
+        <section class="section-contacto container mb-5">
+            <div class="section-contacto__info">
+                <div>
+                    <h3 class="section__titulo">Nuestros Datos</h3>
+                    <div class="informacion pt-3">
+                        <p class="d-flex align-items-center gap-2 justify-content-center"><i class="fa-solid fa-envelope"></i>Correo@Correo.com</p>
+                        <p class="d-flex align-items-center gap-2 justify-content-center"><i class="fa-solid fa-mobile-retro"></i>3534244272</p>
+                    </div>
                 </div>
-                <h3>Nuestras redes</h3>
-                <div class="redes">
-                    <a href="https://www.facebook.com/"><i class="facebook fa-brands fa-facebook"></i>Facebook</a>
-                    <a href="https://www.instagram.com/"><i class="instagram fa-brands fa-square-instagram"></i>Instagram</a>
-                    <a href="https://www.linkedin.com/home"><i class="linkedin fa-brands fa-linkedin"></i>Linkedln</a>
+                <div class="section-contacto__logo">
+                    <div>
+                        <a href="../index.html"><img src="../assets/images/LogoOpcion2.png" alt="Logo Paredes Trade"></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="section__titulo">Nuestras Redes</h3>
+                    <div class="redes pt-3 mb-4">
+                        <a target="_blank" class="d-flex align-items-center gap-2 justify-content-center" href="https://www.facebook.com/"><i class="facebook fa-brands fa-facebook"></i>Facebook</a>
+                        <a target="_blank" class="d-flex align-items-center gap-2 justify-content-center" href="https://www.instagram.com/"><i class="instagram fa-brands fa-square-instagram"></i>Instagram</a>
+                        <a target="_blank" class="d-flex align-items-center gap-2 justify-content-center" href="https://www.linkedin.com/home"><i class="linkedin fa-brands fa-linkedin"></i>Linkedln</a>
+                    </div>
                 </div>
             </div>
             <form class="formulario" action="#" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+                <div>
+                    <label class="d-block mb-2" for="nombre">Nombre:</label>
+                    <input class="w-100" type="text" name="nombre" id="nombre" placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="d-block mb-2" for="email">E-mail:</label>
+                    <input class="w-100" type="email" name="email" id="email" placeholder="JohnDoe@correo.com">
+                </div>
+                <div>
+                    <label class="d-block mb-2" for="telefono">Telefono:</label>
+                    <input class="w-100" type="tel" name="telefono" id="telefono" placeholder="3534233212">
+                </div>
+                <div>
+                    <label class="d-block mb-2" for="mensaje">Mensaje:</label>
+                    <textarea class="w-100" name="mensaje" id="mensaje" placeholder="Cuéntenos su interes"></textarea>
+                </div>
     
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
-    
-                <label for="telefono">Telefono:</label>
-                <input type="tel" name="telefono" id="telefono">
-    
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" placeholder="Cuéntenos su interes"></textarea>
-    
-                <input type="submit" value="Enviar">
-                <input type="button" value="Resetear">
+                <input class="formulario__button" type="submit" value="Enviar">
+                <input class="mb-4 formulario__button" type="button" value="Resetear">
             </form>
         </section>
     </main>
     <!--Fin del main ( Formulario )-->
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer m-0">
         <div class="contenedor contenido-footer">
             <div class="w-100 text-center my-3">
                 <h3 class="footer__titulo">ParedesTrade</h3>
@@ -112,9 +126,9 @@
             <div class="redes w-100 text-center my-3">
                 <h3 class="footer__titulo">Redes</h3>
                 <div>
-                    <a href="https://www.facebook.com/"><i class="facebook fa-brands fa-facebook"></i>Facebook</a>
-                    <a href="https://www.instagram.com/"><i class="instagram fa-brands fa-square-instagram"></i>Instagram</a>
-                    <a href="https://www.linkedin.com/home"><i class="linkedin fa-brands fa-linkedin"></i>Linkedln</a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="facebook fa-brands fa-facebook"></i>Facebook</a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="instagram fa-brands fa-square-instagram"></i>Instagram</a>
+                    <a href="https://www.linkedin.com/home" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i>Linkedln</a>
                 </div>
             </div>
             <div class="informacion w-100 text-center my-3">
