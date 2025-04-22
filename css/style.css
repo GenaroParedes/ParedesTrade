@@ -485,7 +485,7 @@ h1, h2 {
 
 
 @media (min-width: 992px){
-    .principal-info{
+    .principal__info{
         margin: 0 5rem;
     }
     .categorias {
@@ -498,7 +498,7 @@ h1, h2 {
 
 @media (min-width: 1200px){
     .principal-info{
-        margin: 0 25rem;
+        margin: 0 15rem;
     }
     .categorias {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
