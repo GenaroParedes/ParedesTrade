@@ -66,6 +66,10 @@ h1, h2 {
   background-color: #075f20;
 }
 
+.moon {
+  cursor: pointer;
+}
+
 /*Carpeta Layout*/
 /* Estilos Header */
 .header {
@@ -327,6 +331,7 @@ h1, h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #D2D3CF;
 }
 .section-nosotros .section-nosotros__img {
   flex: 1;
