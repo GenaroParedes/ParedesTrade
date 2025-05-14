@@ -1,0 +1,114 @@
+/*Pagina Contacto*/
+.section-contacto{
+    padding: 25px;
+    background-color: $Verde;
+    border-radius: 10px;
+
+    .section-contacto__info{
+        display: none;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        color: $White;
+        gap: 2rem;
+
+        input, textarea{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            border: 1px solid $Verde-oscuro;
+            color: $White;
+        }
+
+        textarea{
+            min-height: 120px;
+        }
+
+        
+
+        input:hover, textarea:hover{
+            background-color: $Verde-oscuro;
+            border: 1px solid $Black;
+        }
+
+        input:focus, textarea:focus {
+            background-color: $Verde-oscuro;
+            outline: none;
+        }
+
+        .formulario__button{
+            background-color: transparent;
+            border: 1px solid $Verde-oscuro;
+            color: $White;
+            font-weight: 700;
+        }
+
+        .formulario__button:hover{
+            background-color: $Verde-oscuro;
+            border: 1px solid $Black;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+          color: $White; /* o cualquier color que estés usando */
+          opacity: 1; /* importante para que se vea bien en algunos navegadores */
+        }
+    }
+}
+
+@include escritorioXL{
+    .section-contacto{
+        display: flex;
+        flex-direction: row;
+        color: $White;
+        padding: 20px;
+
+        .section-contacto__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            text-align: center;
+            margin-right: 4rem;
+
+            .redes{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+                a{
+                    color: $White;
+                }
+                a:hover{
+                    color: blue;
+                }
+                a:hover:nth-child(2){
+                    color: rgb(236, 49, 49);
+                }
+            }
+        }
+        .formulario{
+            flex: 1;
+        }
+
+        .section-contacto__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 300px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

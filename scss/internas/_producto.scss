@@ -1,0 +1,55 @@
+/*Pagina producto especifico*/
+.producto-especifico{
+    width: 50%;
+
+    .flechas{
+        width: 8%;
+    }
+}
+.producto-especifico .imagen {
+    width: 100%;
+}
+
+@include tablet {
+    /*Pagina Producto especifico*/
+    .producto{
+        flex-direction: row;
+        gap: 2rem;
+        .carousel{
+            flex: 1;
+        }
+        .carousel-inner{
+            height: 100%;
+            .carousel-item{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        .producto__info{
+            margin: 0;
+            flex: 1;
+        }
+        
+    }
+}
+
+@include escritorioXL {
+    .producto{
+        .producto__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}

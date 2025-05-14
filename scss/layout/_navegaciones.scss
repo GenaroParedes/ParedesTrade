@@ -1,0 +1,51 @@
+/* Estilos navegaciones de Header y Footer */
+.nav .nav__list { 
+    list-style: none;
+}
+
+.nav .nav__list .nav__list--link { 
+    text-decoration: none;
+    display: inline-block;
+    color: $Verde;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+    padding-top: 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.nav .nav__list .nav__list--link:hover {
+    transform: translateY(-4px);
+    color: $Verde-oscuro;
+}
+
+.nav .nav__list .nav__list--link:active {
+    background-color: $Verde;
+    color: $White;
+    font-weight: 800;
+}
+
+/*Menu Lateral*/
+.navbar-nav{
+    text-align: center;
+    color: $Verde-oscuro;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link{
+    display: inline-block;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.nav-link:hover{
+    font-weight: 700;
+}
+
+.nav-link:active{
+    background-color: $Verde;
+    color: $White;
+}

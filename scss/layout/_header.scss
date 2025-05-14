@@ -1,0 +1,43 @@
+/* Estilos Header */
+.header{ 
+    background-color: $Gris-claro;
+}
+
+.header-logo {
+    width: 163px;
+    height: 87px;
+}
+
+.header-logo a img{
+    width: 100%;
+}
+
+.imagen-fondo {
+    background-image: url('../assets/images/fondo-ia.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */
+    height: 80vh; /* Ocupa toda la altura de la pantalla */
+    width: 100%;
+    position: relative; /* Para posicionar el contenido encima */
+    color: $Black;
+    font-weight: 700;
+}
+
+@include tablet {
+    .titulo-main {
+        margin: 0 2rem;
+    }
+}
+
+@include escritorio {
+    .principal__info{
+        margin: 0 5rem;
+    }
+}
+
+@include escritorioXL {
+    .principal-info{
+        margin: 0 15rem;
+    }
+}

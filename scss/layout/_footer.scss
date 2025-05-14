@@ -1,0 +1,40 @@
+/* Footer */
+.footer {
+    background-color: $Gris-claro;
+    margin-top: 2rem;
+
+    .footer__titulo{
+        color: $Black;
+        font-weight: 600;
+        margin: 2rem 0;
+        position: relative;
+    }
+
+    .footer__titulo::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 100px; /* o 100% si querés que ocupe todo el ancho */
+        height: 1px;
+        background-color: $Black;
+    }
+}
+
+.contenido-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@include tablet {
+    .contenido-footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include escritorio {
+    .contenido-footer{
+        grid-template-columns: repeat(4, 1fr);
+    }  
+}

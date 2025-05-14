@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente;
+    background-color: $Gris-claroXl;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.contenedor { 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contenedor-lg{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__titulo{
+    font-weight: 700;
+}

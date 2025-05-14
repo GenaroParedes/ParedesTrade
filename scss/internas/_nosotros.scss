@@ -1,0 +1,62 @@
+/*Pagina Nosotros*/
+.main-nosotros{
+    min-height: 90vh;
+}
+
+.section-nosotros{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .section-nosotros__img {
+        flex: 1;
+        width: 100%;
+        border: .5px solid $Gris-claro;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+            width: 100%;
+        } 
+    }
+    .section-nosotros__parrafo {
+        flex: 1;
+        p{
+            padding: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+@include tablet {
+    /*Pagina nosotros*/
+    .section-nosotros{
+        flex-direction: row;
+        border: 0.2px solid $Gris-claro;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+
+        .section-nosotros__parrafo {
+            p {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@include escritorioXL {
+    .section-nosotros{
+        margin: 0 auto;
+        .section-nosotros__parrafo {
+            p {
+                padding: 30px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}

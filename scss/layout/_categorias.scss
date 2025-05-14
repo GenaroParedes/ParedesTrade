@@ -1,0 +1,50 @@
+.categorias-section{
+    margin-top: 3rem;
+    background-color: $White;
+    padding: 20px 20px;
+
+}
+
+.categorias {
+    margin: 5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.categoria{
+    text-align: center;
+    background-color: $Gris-Oscuro;
+    border-radius: 10px;
+    padding: 25px;
+    transition: $transition;
+    
+    .categoria__titulo{
+        padding-top: 1rem;
+        color: $White;
+        font-weight: 700;
+    }
+}
+
+.categoria:hover {
+    transform: translateY(-10px);
+    background-color: $Verde-oscuro;
+}
+
+@include tablet {
+    .categorias {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@include escritorio {
+    .categorias {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@include escritorioXL {
+    .categorias {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }  
+}

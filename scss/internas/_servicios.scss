@@ -1,0 +1,30 @@
+/*Pagina Servicios*/
+.main-servicios{
+    background-color: $White;
+}
+
+/*background image*/
+.servicios-principal{
+    background-color: $Verde;
+    padding: 2rem 3rem;
+    text-align: center;
+    color: $White;
+}
+
+@include tablet{
+    /*Pagina Servicios*/
+    .servicios-principal{
+        background-image: url('../assets/images/fondo-servicios1.png');
+        background-position: bottom;
+        background-size: cover;
+        min-height: 90vh;
+        color: $Black;
+    }
+}
+
+@include escritorioXL{
+    /*Pagina Servicios*/
+    .servicios-principal{
+        padding: 0 200px;
+    }
+}

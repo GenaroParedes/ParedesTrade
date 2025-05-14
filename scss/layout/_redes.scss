@@ -1,0 +1,35 @@
+/* Color Iconos Redes y Reset de estilos a los enlaces de Redes en todas las paginas */
+.redes a {
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $Black;
+}
+
+.redes a:hover {
+    color: blue;
+}
+
+.redes a:hover:nth-child(2) {
+    color: rgb(236, 49, 49);
+}
+
+.linkedin, .facebook{
+    color: blue;
+}
+.instagram{
+    color: rgb(236, 49, 49);
+}
+
+.redes .redes__links .redes__links--link, .informacion .informacion__parrafos .informacion__parrafos--parrafo {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.redes .redes__links,  .informacion .informacion__parrafos {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    align-items: center;
+}
