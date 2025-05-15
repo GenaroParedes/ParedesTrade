@@ -24,17 +24,17 @@
 
 .contenido-footer{
     display: grid;
-    grid-template-columns: 1fr;
+    @include grid(1,1fr);
 }
 
 @include tablet {
     .contenido-footer{
-        grid-template-columns: repeat(2, 1fr);
+        @include grid(2, 1fr);
     }
 }
 
 @include escritorio {
     .contenido-footer{
-        grid-template-columns: repeat(4, 1fr);
+        @include grid(4, 1fr);
     }  
 }

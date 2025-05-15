@@ -33,18 +33,18 @@
 
 @include tablet {
     .categorias {
-        grid-template-columns: 1fr 1fr;
+        @include grid(2, 1fr);
     }
 }
 
 @include escritorio {
     .categorias {
-        grid-template-columns: 1fr 1fr 1fr;
+        @include grid(3, 1fr);
     }
 }
 
 @include escritorioXL {
     .categorias {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        @include grid(5, 1fr);
     }  
 }

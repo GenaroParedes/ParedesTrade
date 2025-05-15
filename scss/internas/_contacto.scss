@@ -1,4 +1,13 @@
 /*Pagina Contacto*/
+/*Extend*/
+.inputs {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid $Verde-oscuro;
+    color: $White;
+}
+
 .section-contacto{
     padding: 25px;
     background-color: $Verde;
@@ -14,15 +23,12 @@
         color: $White;
         gap: 2rem;
 
-        input, textarea{
-            padding: 10px;
-            border-radius: 10px;
-            background-color: transparent;
-            border: 1px solid $Verde-oscuro;
-            color: $White;
+        input{
+            @extend .inputs;
         }
 
         textarea{
+            @extend .inputs;
             min-height: 120px;
         }
 

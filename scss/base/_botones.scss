@@ -1,12 +1,17 @@
 /*Botones*/
+.btn-base{
+    border-radius: 10px;
+    color: $White;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .button {
+    @extend .btn-base;
     text-decoration: none;
     display: inline-block;
-    border-radius: 10px;
     padding: 9px 14px;
-    color: $White;
     background-color: $Gris-Oscuro;
-    font-weight: 700;
     margin:  0 auto;
 }
 
@@ -23,11 +28,9 @@
 }
 
 .filtro-btn{
+    @extend .btn-base;
     padding: 10px 25px;
-    border-radius: 10px;
     border: none;
-    color: $White;
-    font-weight: 600;
     background-color: $Verde;
 }
 

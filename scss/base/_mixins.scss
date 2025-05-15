@@ -21,3 +21,7 @@
         @content;
     }
 }
+
+@mixin grid($cantidad, $ancho) {
+    grid-template-columns: repeat($cantidad, $ancho);
+}
