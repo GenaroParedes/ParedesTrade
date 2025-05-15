@@ -29,6 +29,10 @@ h1, h2 {
   font-weight: 700;
 }
 
+.carousel-item img {
+  cursor: pointer;
+}
+
 /*Botones*/
 .button {
   text-decoration: none;
