@@ -1,0 +1,28 @@
+@use 'mixins';
+.modal-close-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro semitransparente */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close-circle .btn-close {
+    filter: invert(1); /* para que se vea blanca */
+    opacity: 1;
+}
+
+@include telefono {
+    .modal-close-circle {
+        top: 35px;
+        z-index: 1056;
+    }
+}
+
+@include tablet {
+    .modal-close-circle{
+        top: -20px;
+    }
+}
