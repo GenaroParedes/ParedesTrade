@@ -1,6 +1,8 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 .categorias-section{
     margin-top: 3rem;
-    background-color: $White;
+    background-color: v.$White;
     padding: 20px 20px;
 
 }
@@ -14,37 +16,37 @@
 
 .categoria{
     text-align: center;
-    background-color: $Gris-Oscuro;
+    background-color: v.$Gris-Oscuro;
     border-radius: 10px;
     padding: 25px;
-    transition: $transition;
+    transition: v.$transition;
     
     .categoria__titulo{
         padding-top: 1rem;
-        color: $White;
+        color: v.$White;
         font-weight: 700;
     }
 }
 
 .categoria:hover {
     transform: translateY(-10px);
-    background-color: $Verde-oscuro;
+    background-color: v.$Verde-oscuro;
 }
 
-@include tablet {
+@include m.tablet {
     .categorias {
-        @include grid(2, 1fr);
+        @include m.grid(2, 1fr);
     }
 }
 
-@include escritorio {
+@include m.escritorio {
     .categorias {
-        @include grid(3, 1fr);
+        @include m.grid(3, 1fr);
     }
 }
 
-@include escritorioXL {
+@include m.escritorioXL {
     .categorias {
-        @include grid(5, 1fr);
+        @include m.grid(5, 1fr);
     }  
 }

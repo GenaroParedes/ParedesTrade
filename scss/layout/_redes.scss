@@ -1,9 +1,10 @@
+@use '../base/variables' as v;
 /* Color Iconos Redes y Reset de estilos a los enlaces de Redes en todas las paginas */
 .redes a {
     font-size: 19px;
     font-weight: 600;
     text-decoration: none;
-    color: $Black;
+    color: v.$Black;
 }
 
 .redes a:hover {

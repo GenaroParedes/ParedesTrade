@@ -1,10 +1,12 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 /* Footer */
 .footer {
-    background-color: $Gris-claro;
+    background-color: v.$Gris-claro;
     margin-top: 2rem;
 
     .footer__titulo{
-        color: $Black;
+        color: v.$Black;
         font-weight: 600;
         margin: 2rem 0;
         position: relative;
@@ -18,23 +20,23 @@
         transform: translateX(-50%);
         width: 100px; /* o 100% si querés que ocupe todo el ancho */
         height: 1px;
-        background-color: $Black;
+        background-color: v.$Black;
     }
 }
 
 .contenido-footer{
     display: grid;
-    @include grid(1,1fr);
+    @include m.grid(1,1fr);
 }
 
-@include tablet {
+@include m.tablet {
     .contenido-footer{
-        @include grid(2, 1fr);
+        @include m.grid(2, 1fr);
     }
 }
 
-@include escritorio {
+@include m.escritorio {
     .contenido-footer{
-        @include grid(4, 1fr);
+        @include m.grid(4, 1fr);
     }  
 }

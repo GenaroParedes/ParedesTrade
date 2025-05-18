@@ -1,3 +1,5 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 /*Pagina Nosotros*/
 .main-nosotros{
     min-height: 90vh;
@@ -9,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $Gris-claro;
+    background-color: v.$Gris-claro;
 
     .section-nosotros__img {
         flex: 1;
@@ -29,11 +31,11 @@
     }
 }
 
-@include tablet {
+@include m.tablet {
     /*Pagina nosotros*/
     .section-nosotros{
         flex-direction: row;
-        border: 0.2px solid $Gris-claro;
+        border: 0.2px solid v.$Gris-claro;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
         border-radius: 10px;
 
@@ -46,7 +48,7 @@
     }
 }
 
-@include escritorioXL {
+@include m.escritorioXL {
     .section-nosotros{
         margin: 0 auto;
         .section-nosotros__parrafo {

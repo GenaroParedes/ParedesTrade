@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e7e7e6;
+  position: relative;
 }
 
 h1, h2 {
@@ -31,6 +32,17 @@ h1, h2 {
 
 .carousel-item img {
   cursor: pointer;
+}
+
+.icono-whatssap {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2000;
+}
+.icono-whatssap img {
+  width: 60px;
+  height: 60px;
 }
 
 /*Botones*/

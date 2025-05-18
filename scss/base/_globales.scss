@@ -1,3 +1,4 @@
+@use 'variables' as v;
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,9 @@
 }
 
 body {
-    font-family: $fuente;
-    background-color: $Gris-claroXl;
+    font-family: v.$fuente;
+    background-color: v.$Gris-claroXl;
+    position: relative;
 }
 
 h1, h2 {
@@ -29,4 +31,15 @@ h1, h2 {
 
 .carousel-item img {
     cursor: pointer;
+}
+
+.icono-whatssap{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2000;
+    img{
+        width: 60px;
+        height: 60px;
+    }
 }

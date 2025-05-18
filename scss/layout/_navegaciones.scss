@@ -1,3 +1,4 @@
+@use '../base/variables' as v;
 /* Estilos navegaciones de Header y Footer */
 .nav .nav__list { 
     list-style: none;
@@ -6,7 +7,7 @@
 .nav .nav__list .nav__list--link { 
     text-decoration: none;
     display: inline-block;
-    color: $Verde;
+    color: v.$Verde;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -18,19 +19,19 @@
 
 .nav .nav__list .nav__list--link:hover {
     transform: translateY(-4px);
-    color: $Verde-oscuro;
+    color: v.$Verde-oscuro;
 }
 
 .nav .nav__list .nav__list--link:active {
-    background-color: $Verde;
-    color: $White;
+    background-color: v.$Verde;
+    color: v.$White;
     font-weight: 800;
 }
 
 /*Menu Lateral*/
 .navbar-nav{
     text-align: center;
-    color: $Verde-oscuro;
+    color: v.$Verde-oscuro;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -46,6 +47,6 @@
 }
 
 .nav-link:active{
-    background-color: $Verde;
-    color: $White;
+    background-color: v.$Verde;
+    color: v.$White;
 }
