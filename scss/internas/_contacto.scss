@@ -1,16 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 /*Pagina Contacto*/
 /*Extend*/
 .inputs {
     padding: 10px;
     border-radius: 10px;
     background-color: transparent;
-    border: 1px solid $Verde-oscuro;
-    color: $White;
+    border: 1px solid v.$Verde-oscuro;
+    color: v.$White;
 }
 
 .section-contacto{
     padding: 25px;
-    background-color: $Verde;
+    background-color: v.$Verde;
     border-radius: 10px;
 
     .section-contacto__info{
@@ -20,7 +22,7 @@
     .formulario{
         display: flex;
         flex-direction: column;
-        color: $White;
+        color: v.$White;
         gap: 2rem;
 
         input{
@@ -35,40 +37,40 @@
         
 
         input:hover, textarea:hover{
-            background-color: $Verde-oscuro;
-            border: 1px solid $Black;
+            background-color: v.$Verde-oscuro;
+            border: 1px solid v.$Black;
         }
 
         input:focus, textarea:focus {
-            background-color: $Verde-oscuro;
+            background-color: v.$Verde-oscuro;
             outline: none;
         }
 
         .formulario__button{
             background-color: transparent;
-            border: 1px solid $Verde-oscuro;
-            color: $White;
+            border: 1px solid v.$Verde-oscuro;
+            color: v.$White;
             font-weight: 700;
         }
 
         .formulario__button:hover{
-            background-color: $Verde-oscuro;
-            border: 1px solid $Black;
+            background-color: v.$Verde-oscuro;
+            border: 1px solid v.$Black;
         }
 
         input::placeholder,
         textarea::placeholder {
-          color: $White; /* o cualquier color que estés usando */
+          color: v.$White; /* o cualquier color que estés usando */
           opacity: 1; /* importante para que se vea bien en algunos navegadores */
         }
     }
 }
 
-@include escritorioXL{
+@include m.escritorioXL{
     .section-contacto{
         display: flex;
         flex-direction: row;
-        color: $White;
+        color: v.$White;
         padding: 20px;
 
         .section-contacto__info{
@@ -85,7 +87,7 @@
                 justify-content: center;
                 gap: 2rem;
                 a{
-                    color: $White;
+                    color: v.$White;
                 }
                 a:hover{
                     color: blue;

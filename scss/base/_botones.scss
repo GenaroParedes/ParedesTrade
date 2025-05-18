@@ -1,7 +1,8 @@
+@use 'variables' as v;
 /*Botones*/
 .btn-base{
     border-radius: 10px;
-    color: $White;
+    color: v.$White;
     font-weight: 700;
     cursor: pointer;
 }
@@ -11,12 +12,12 @@
     text-decoration: none;
     display: inline-block;
     padding: 9px 14px;
-    background-color: $Gris-Oscuro;
+    background-color: v.$Gris-Oscuro;
     margin:  0 auto;
 }
 
 .button:hover{
-    background-color: $Verde-oscuro;
+    background-color: v.$Verde-oscuro;
 }
 
 .productos-buttons{
@@ -31,11 +32,11 @@
     @extend .btn-base;
     padding: 10px 25px;
     border: none;
-    background-color: $Verde;
+    background-color: v.$Verde;
 }
 
 .filtro-btn:hover{
-    background-color: $Verde-oscuro;
+    background-color: v.$Verde-oscuro;
 }
 
 .moon {

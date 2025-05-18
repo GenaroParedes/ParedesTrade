@@ -1,21 +1,21 @@
 /*Carpeta Base*/
-@import 'base/variables';
-@import 'base/globales';
-@import 'base/botones';
-@import 'base/mixins';
-@import 'base/modal';
+@use 'base/variables' as *;
+@use 'base/globales' as *;
+@use 'base/botones' as *;
+@use 'base/mixins' as *;
+@use 'base/modal' as *;
 
 /*Carpeta Layout*/
-@import 'layout/header';
-@import 'layout/navegaciones';
-@import 'layout/categorias';
-@import 'layout/redes';
-@import 'layout/footer';
+@use 'layout/header' as *;
+@use 'layout/navegaciones' as *;
+@use 'layout/categorias' as *;
+@use 'layout/redes' as *;
+@use 'layout/footer' as *;
 
 /*Carpeta Internas*/
-@import 'internas/nosotros';
-@import 'internas/servicios';
-@import 'internas/producto';
-@import 'internas/contacto';
-@import 'internas/productos';
+@use 'internas/nosotros' as *;
+@use 'internas/servicios' as *;
+@use 'internas/producto' as *;
+@use 'internas/contacto' as *;
+@use 'internas/productos' as *;
 

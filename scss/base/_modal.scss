@@ -1,4 +1,4 @@
-@use 'mixins';
+@use 'mixins' as m;
 .modal-close-circle {
     width: 40px;
     height: 40px;
@@ -14,14 +14,14 @@
     opacity: 1;
 }
 
-@include telefono {
+@include m.telefono {
     .modal-close-circle {
         top: 35px;
         z-index: 1056;
     }
 }
 
-@include tablet {
+@include m.tablet {
     .modal-close-circle{
         top: -20px;
     }
