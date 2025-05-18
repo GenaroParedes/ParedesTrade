@@ -36,15 +36,27 @@ h1, h2 {
 
 .icono-whatssap {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
   z-index: 2000;
 }
 .icono-whatssap img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
+/*Menu lateral, para cuando lo abrimos que aparezca por encima del logo de Whatsshap*/
+#menuMobile {
+  z-index: 2500;
+}
+
+/*Distintos tamaños para el logo de whatssap segun la pantalla*/
+@media (min-width: 768px) {
+  .icono-whatssap img {
+    width: 50px;
+    height: 50px;
+  }
+}
 /*Botones*/
 .btn-base, .filtro-btn, .button {
   border-radius: 10px;
