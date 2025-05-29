@@ -6,36 +6,3 @@
     grid-template-columns: 1fr;
 }
 
-.producto{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    .producto__info{
-        margin-top: 2rem;
-
-        h2{
-            font-weight: 600;
-        }
-
-        p{
-            font-size: 18px;
-            font-weight: 600;
-        }
-    }
-
-    .precio{
-        color: v.$Verde;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    .producto-titulo{
-        font-size: 22px;
-        font-weight: bold;
-    }
-
-    .producto-img { 
-        width: 50%;
-    }
-}

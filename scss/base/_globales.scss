@@ -1,5 +1,5 @@
 @use 'variables' as v;
-@use 'mixins' as m;
+@use '../modules/mixins' as m;
 * {
     margin: 0;
     padding: 0;

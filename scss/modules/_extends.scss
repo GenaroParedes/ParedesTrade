@@ -1,0 +1,15 @@
+@use '../base/variables' as v;
+.btn-base{
+    border-radius: 10px;
+    color: v.$White;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.inputs {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid v.$Verde-oscuro;
+    color: v.$White;
+}

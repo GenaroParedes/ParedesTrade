@@ -1,5 +1,5 @@
 @use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use '../modules/mixins' as m;
 .categorias-section{
     margin-top: 3rem;
     background-color: v.$White;
