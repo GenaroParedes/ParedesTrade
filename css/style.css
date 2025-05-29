@@ -51,20 +51,28 @@ h1, h2 {
 }
 
 /*Distintos tamaños para el logo de whatssap segun la pantalla*/
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .icono-whatssap img {
     width: 50px;
     height: 50px;
   }
 }
-/*Botones*/
-.btn-base, .filtro-btn, .button {
+.btn-base, .button, .filtro-btn {
   border-radius: 10px;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
 }
 
+.inputs, .section-contacto .formulario input, .section-contacto .formulario textarea {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #075f20;
+  color: #fff;
+}
+
+/*Botones*/
 .button {
   text-decoration: none;
   display: inline-block;
@@ -99,32 +107,7 @@ h1, h2 {
   cursor: pointer;
 }
 
-.modal-close-circle {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro semitransparente */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-close-circle .btn-close {
-  filter: invert(1); /* para que se vea blanca */
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .modal-close-circle {
-    top: 35px;
-    z-index: 1056;
-  }
-}
-@media (min-width: 768px) {
-  .modal-close-circle {
-    top: -20px;
-  }
-}
+/*Carpeta Modules*/
 /*Carpeta Layout*/
 /* Estilos Header */
 .header {
@@ -141,7 +124,7 @@ h1, h2 {
 }
 
 .imagen-fondo {
-  background-image: url("../assets/images/fondo-ia.png");
+  background-image: url("../assets/images/fondo-ia.avif");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */
@@ -152,17 +135,17 @@ h1, h2 {
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .titulo-main {
     margin: 0 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .principal__info {
     margin: 0 5rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .principal-info {
     margin: 0 15rem;
   }
@@ -250,17 +233,17 @@ h1, h2 {
   background-color: #075f20;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .categorias {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .categorias {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .categorias {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -329,14 +312,40 @@ h1, h2 {
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .contenido-footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .contenido-footer {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+.modal-close-circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro semitransparente */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-circle .btn-close {
+  filter: invert(1); /* para que se vea blanca */
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .modal-close-circle {
+    top: 35px;
+    z-index: 1056;
+  }
+}
+@media (min-width: 992px) {
+  .modal-close-circle {
+    top: -20px;
   }
 }
 /*Carpeta Internas*/
@@ -370,7 +379,7 @@ h1, h2 {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /*Pagina nosotros*/
   .section-nosotros {
     flex-direction: row;
@@ -383,7 +392,7 @@ h1, h2 {
     font-size: 18px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .section-nosotros {
     margin: 0 auto;
   }
@@ -406,17 +415,17 @@ h1, h2 {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /*Pagina Servicios*/
   .servicios-principal {
-    background-image: url("../assets/images/fondo-servicios1.png");
+    background-image: url("../assets/images/fondo-servicios1.avif");
     background-position: bottom;
     background-size: cover;
     min-height: 90vh;
     color: #000;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /*Pagina Servicios*/
   .servicios-principal {
     padding: 0 200px;
@@ -434,7 +443,35 @@ h1, h2 {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+.producto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.producto .producto__info {
+  margin-top: 2rem;
+}
+.producto .producto__info h2 {
+  font-weight: 600;
+}
+.producto .producto__info p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.producto .precio {
+  color: #359350;
+  font-weight: bold;
+  font-size: 18px;
+}
+.producto .producto-titulo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.producto .producto-img {
+  width: 50%;
+}
+
+@media (min-width: 992px) {
   /*Pagina Producto especifico*/
   .producto {
     flex-direction: row;
@@ -457,7 +494,7 @@ h1, h2 {
     flex: 1;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .producto .producto__info {
     display: flex;
     flex-direction: column;
@@ -522,7 +559,7 @@ h1, h2 {
   opacity: 1; /* importante para que se vea bien en algunos navegadores */
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .section-contacto {
     display: flex;
     flex-direction: row;
@@ -577,34 +614,6 @@ h1, h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.producto {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.producto .producto__info {
-  margin-top: 2rem;
-}
-.producto .producto__info h2 {
-  font-weight: 600;
-}
-.producto .producto__info p {
-  font-size: 18px;
-  font-weight: 600;
-}
-.producto .precio {
-  color: #359350;
-  font-weight: bold;
-  font-size: 18px;
-}
-.producto .producto-titulo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.producto .producto-img {
-  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

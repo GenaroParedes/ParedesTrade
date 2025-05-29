@@ -1,21 +1,24 @@
 /*Carpeta Base*/
-@use 'base/variables' as *;
-@use 'base/globales' as *;
-@use 'base/botones' as *;
-@use 'base/mixins' as *;
-@use 'base/modal' as *;
+@use 'base/variables';
+@use 'base/globales';
+@use 'base/botones';
+
+/*Carpeta Modules*/
+@use 'modules/extends';
+@use 'modules/mixins';
 
 /*Carpeta Layout*/
-@use 'layout/header' as *;
-@use 'layout/navegaciones' as *;
-@use 'layout/categorias' as *;
-@use 'layout/redes' as *;
-@use 'layout/footer' as *;
+@use 'layout/header';
+@use 'layout/navegaciones';
+@use 'layout/categorias';
+@use 'layout/redes';
+@use 'layout/footer';
+@use 'layout/modal';
 
 /*Carpeta Internas*/
-@use 'internas/nosotros' as *;
-@use 'internas/servicios' as *;
-@use 'internas/producto' as *;
-@use 'internas/contacto' as *;
-@use 'internas/productos' as *;
+@use 'internas/nosotros';
+@use 'internas/servicios';
+@use 'internas/producto';
+@use 'internas/contacto';
+@use 'internas/productos';
 

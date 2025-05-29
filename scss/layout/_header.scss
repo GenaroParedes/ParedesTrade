@@ -1,5 +1,5 @@
 @use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use '../modules/mixins' as m;
 /* Estilos Header */
 .header{ 
     background-color: v.$Gris-claro;
@@ -15,7 +15,7 @@
 }
 
 .imagen-fondo {
-    background-image: url('../assets/images/fondo-ia.png');
+    background-image: url('../assets/images/fondo-ia.avif');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */

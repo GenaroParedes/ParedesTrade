@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración básica -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Compra y venta de Autos, motos, casas, dptos">
-    <meta name="keywords" content="Venta, Motos, Autos, Departamentos, Casas">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SEO básico -->
+    <meta name="description" content="Paredes Trade ofrece servicios confiables de compra y venta de autos, motos, casas y departamentos en todo el país.">
+    <meta name="keywords" content="venta de autos, venta de motos, propiedades, casas, departamentos, compra, venta, ParedesTrade">
+    <meta name="author" content="Genaro Paredes">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/LogoParedesTrade.ico" type="image/x-icon">
+
+    <!-- Open Graph (para Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Paredes Trade | Compra y Venta de Vehículos e Inmuebles">
+    <meta property="og:description" content="Compra y venta segura de autos, motos, casas y departamentos. Confiabilidad y atención personalizada.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/GenaroParedes/ParedesTrade/main/assets/images/LogoParedesTrade.jpg">
+    <meta property="og:url" content="https://genaroparedes.github.io/ParedesTrade/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card (opcional pero recomendado) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Paredes Trade | Compra y Venta de Vehículos e Inmuebles">
+    <meta name="twitter:description" content="Compra y venta segura de autos, motos, casas y departamentos. Confiabilidad y atención personalizada.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/GenaroParedes/ParedesTrade/main/assets/images/LogoParedesTrade.jpg">
+
+    <!-- Estilos y fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!--Agregamos el CSS de bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <!--Animate.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6babe4496f.js" crossorigin="anonymous"></script>
-    <title>Paredes Trade</title>
+
+    <!-- CSS optimizado con carga diferida -->
+    <link rel="stylesheet" href="./css/style.css" media="print" onload="this.onload=null;this.media='all';">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.onload=null;this.media='all';">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.onload=null;this.media='all';">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" media="print" onload="this.onload=null;this.media='all';">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/6babe4496f.js" crossorigin="anonymous" defer></script>
+
+    <!-- Título de la página -->
+    <title>Paredes Trade | Compra y Venta de Autos, Motos y Propiedades</title>
 </head>
 <body>
     <div class="icono-whatssap">
-        <a href="https://wa.me/5493534244272" target="_blank"><img src="./assets/images/whatsapp.png" alt="Icono Whatssap"></a>
+        <a href="https://wa.me/5493534244272" target="_blank" aria-label="Chatear por WhatsApp">
+            <picture>
+                <source srcset="./assets/images/whatsapp.avif" type="image/avif">
+                <source srcset="./assets/images/whatsapp.webp" type="image/webp">
+                <img src="./assets/images/whatsapp.jpg" alt="Icono Whatssap" loading="lazy">
+            </picture>
+        </a>
     </div>
     <!--Header-->
     <header class="header">
         <div class="container d-flex align-items-center justify-content-between p-2">
             <!-- Logo -->
             <div class="header-logo">
-                <a href="index.html"><img src="./assets/images/LogoOpcion2.png" alt="Logo Paredes Trade"></a>
+                <a href="index.html">
+                    <picture>
+                        <source srcset="./assets/images/LogoOpcion2.avif" type="image/avif">
+                        <source srcset="./assets/images/LogoOpcion2.webp" type="image/webp">
+                        <img src="./assets/images/LogoOpcion2.png" alt="Logo Paredes Trade" loading="lazy" width="250" height="80">
+                    </picture>
+                </a>
             </div>
             <!-- Navegación -->
             <nav class="nav d-none d-xl-block flex-grow-1">
@@ -96,7 +133,11 @@
             <div>
                 <div class="row justify-content-center row-cols-1 row-cols-lg-3 gap-5 gap-lg-5 px-4">
                     <article class="card text-center col-md-4 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="card-img-top" src="./assets/images/1200-8.jpg" alt="Imagen Moto">
+                        <picture>
+                            <source srcset="./assets/images/1200-8.avif" type="image/avif">
+                            <source srcset="./assets/images/1200-8.webp" type="image/webp">
+                            <img class="card-img-top" src="./assets/images/1200-8.jpg" alt="Imagen Moto" loading="lazy">
+                        </picture>
                         <div class="card-body">
                             <h3>BMW 1200 Rally</h3>
                             <p class="fw-bolder text-success">$37.500,00</p>
@@ -105,7 +146,11 @@
                         </div>
                     </article>
                     <article class="card text-center col-md-4 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="card-img-top" src="./assets/images/1200-8.jpg" alt="Imagen Moto">
+                        <picture>
+                            <source srcset="./assets/images/1200-8.avif" type="image/avif">
+                            <source srcset="./assets/images/1200-8.webp" type="image/webp">
+                            <img class="card-img-top" src="./assets/images/1200-8.jpg" alt="Imagen Moto" loading="lazy">
+                        </picture>
                         <div class="card-body">
                             <h3>BMW 1200 Rally</h3>
                             <p class="fw-bolder text-success">$37.500,00</p>
@@ -114,7 +159,11 @@
                         </div>
                     </article>
                     <article class="card text-center col-md-4 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="producto-img" src="./assets/images/1200-8.jpg" alt="Imagen Moto">
+                        <picture>
+                            <source srcset="./assets/images/1200-8.avif" type="image/avif">
+                            <source srcset="./assets/images/1200-8.webp" type="image/webp">
+                            <img class="card-img-top" src="./assets/images/1200-8.jpg" alt="Imagen Moto" loading="lazy">
+                        </picture>
                         <div class="card-body">
                             <h3>BMW 1200 Rally</h3>
                             <p class="fw-bolder text-success">$37.500,00</p>
@@ -196,7 +245,7 @@
         </div> <!--Contenido Footer-->
     </footer>
     <!--Fin Footer-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

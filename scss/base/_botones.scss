@@ -1,12 +1,6 @@
 @use 'variables' as v;
+@use '../modules/extends';
 /*Botones*/
-.btn-base{
-    border-radius: 10px;
-    color: v.$White;
-    font-weight: 700;
-    cursor: pointer;
-}
-
 .button {
     @extend .btn-base;
     text-decoration: none;
