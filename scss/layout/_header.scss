@@ -15,15 +15,18 @@
 }
 
 .imagen-fondo {
-    background-image: url('../assets/images/fondo-ia.avif');
+    background-image: url('../assets/images/banner1.png');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */
     height: 80vh; /* Ocupa toda la altura de la pantalla */
     width: 100%;
     position: relative; /* Para posicionar el contenido encima */
-    color: v.$Black;
+    color: v.$White;
     font-weight: 700;
+    opacity: .8;
+    background-color: black;
+    
 }
 
 @include m.tablet {

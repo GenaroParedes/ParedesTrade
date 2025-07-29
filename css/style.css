@@ -55,18 +55,9 @@ h1, h2 {
 
 /*Distintos tamaños para el logo de whatssap segun la pantalla*/
 @media (min-width: 992px) {
-  .icono-whatssap {
-    width: 60px;
-    height: 60px;
-  }
   .icono-whatssap img {
-<<<<<<< HEAD
-    width: 100%;
-    height: 100%;
-=======
-    width: 60px;
-    height: 60px;
->>>>>>> main
+    width: 50px;
+    height: 50px;
   }
 }
 .btn-base, .button, .filtro-btn {
@@ -136,15 +127,17 @@ h1, h2 {
 }
 
 .imagen-fondo {
-  background-image: url("../assets/images/fondo-ia.avif");
+  background-image: url("../assets/images/banner1.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */
   height: 80vh; /* Ocupa toda la altura de la pantalla */
   width: 100%;
   position: relative; /* Para posicionar el contenido encima */
-  color: #000;
+  color: #fff;
   font-weight: 700;
+  opacity: 0.8;
+  background-color: black;
 }
 
 @media (min-width: 992px) {
