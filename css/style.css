@@ -423,11 +423,12 @@ h1, h2 {
 @media (min-width: 992px) {
   /*Pagina Servicios*/
   .servicios-principal {
-    background-image: url("../assets/images/fondo-servicios1.avif");
+    background-image: url("../assets/images/servicios.webp");
     background-position: bottom;
+    opacity: 0.8;
     background-size: cover;
     min-height: 90vh;
-    color: #000;
+    color: #fff;
   }
 }
 @media (min-width: 1400px) {

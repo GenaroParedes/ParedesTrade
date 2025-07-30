@@ -16,11 +16,12 @@
 @include m.tablet{
     /*Pagina Servicios*/
     .servicios-principal{
-        background-image: url('../assets/images/fondo-servicios1.avif');
+        background-image: url('../assets/images/servicios.webp');
         background-position: bottom;
+        opacity: .8;
         background-size: cover;
         min-height: 90vh;
-        color: v.$Black;
+        color: v.$White;
     }
 }
 
